@@ -4,14 +4,14 @@
 }
 @keyframes fadeIn {
   0% {
-    transform: translateX(1000px)
+    transform: translateX(1000px);
   }
   100% {
-    transform: translateX(0px)
+    transform: translateX(0px);
   }
 }
 
-.container-produtos{
+.container-produtos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -23,16 +23,23 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.produto:hover{
+.produto:hover {
   transform: scale(1.1);
   cursor: pointer;
   transition: 1s;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  background: rgb(241, 241, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(241, 241, 241, 1) 0%,
+    rgba(198, 205, 77, 1) 36%,
+    rgba(204, 37, 37, 1) 95%
+  );
+  color: black;
   /*padding: 20px;*/
+  height: 100%;
 }
 
 header img {
@@ -62,11 +69,11 @@ section {
   padding: 20px;
 }
 
-.actived{
+.actived {
   background-color: purple;
   color: white;
 }
-.menu{
+.menu {
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -74,21 +81,38 @@ section {
   justify-content: space-around;
   align-items: center;
 }
-.menuItem{
+.menuItem {
   width: 100%;
   text-align: center;
   cursor: pointer;
-  padding: 4px;
-  height: 30px;
+  padding: 7px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 600;
+  user-select: none;
 }
-.menuItem>a{
+.menuItem > a {
   text-decoration: none;
   color: white;
 }
-.menuItem:hover{
+.menuItem:hover {
   transition: 0.3s;
-  background-color: purple;
+  background-color: #125b80;
+  color: white;
 }
-.logo{
+.logo {
+  display: flex;
+  align-items: center;
   padding: 4px;
+  gap: 15px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  padding: 5px;
+  margin: 5px;
 }
