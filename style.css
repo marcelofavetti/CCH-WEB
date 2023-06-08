@@ -1,0 +1,94 @@
+/* style.css */
+* {
+  font-family: system-ui;
+}
+@keyframes fadeIn {
+  0% {
+    transform: translateX(1000px)
+  }
+  100% {
+    transform: translateX(0px)
+  }
+}
+
+.container-produtos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.produto {
+  display: flex;
+  animation: fadeIn 1.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.produto:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 1s;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  /*padding: 20px;*/
+}
+
+header img {
+  width: 100px;
+  height: auto;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+} */
+
+/* nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+} */
+
+section {
+  padding: 20px;
+}
+
+.actived{
+  background-color: purple;
+  color: white;
+}
+.menu{
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  align-items: center;
+}
+.menuItem{
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  padding: 4px;
+  height: 30px;
+}
+.menuItem>a{
+  text-decoration: none;
+  color: white;
+}
+.menuItem:hover{
+  transition: 0.3s;
+  background-color: purple;
+}
+.logo{
+  padding: 4px;
+}
