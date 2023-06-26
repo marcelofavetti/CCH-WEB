@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Orçamento</title>
+    <title>Nome da Empresa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="script.js"></script>
     <link
@@ -17,84 +18,62 @@
     ></script>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <div>
-          <img
-            onclick="redirect('index.html')"
-            src="fotos\LOGO-GOTAS.png"
-            alt="Logo da Empresa"
-          />
+    <div class="container-fluid" style="padding: 0">
+      <header>
+        <div class="logo" class="logo d-flex">
+          <div><img src="fotos\LOGO-GOTAS.png" alt="Logo da Empresa" /></div>
+          <div><h1>Casa das tintas</h1></div>
         </div>
-        <div><h1 onclick="redirect('index.html')">Casa das tintas</h1></div>
-      </div>
-      <nav>
-        <ul class="menu">
-          <li onclick="redirect('index.html')" class="menuItem">Home</li>
-          <li onclick="redirect('produtos.html')" class="menuItem">Produtos</li>
-          <li onclick="redirect('trabalhe-conosco.html')" class="menuItem">
-            Trabalhe Conosco
-          </li>
-          <li onclick="redirect('orcamento.html')" class="menuItem">
-            Orçamento
-          </li>
-          <li onclick="redirect('pagina-extra.html')" class="menuItem">
-            Página Extra
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <title>Orçamento</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <script src="script.js"></script>
-      </head>
-      <body>
-        <header>
-          <!-- Mesmo cabeçalho da página inicial -->
-        </header>
-        <section>
-          <h2>Solicite um Orçamento</h2>
-          <form id="form-orcamento" onsubmit="enviarFormulario(event)">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required />
-            <br />
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required />
-            <br />
-            <label for="tipo-servico">Tipo de Serviço:</label>
-            <select id="tipo-servico" name="tipo-servico" required>
-              <option value="">Selecione</option>
-              <option value="Pintura interna">Pintura interna</option>
-              <option value="Pintura externa">Pintura externa</option>
-              <option value="Pintura de fachada">Pintura de fachada</option>
-            </select>
-            <br />
-            <label for="metros-quadrados">Metros Quadrados:</label>
-            <input
-              type="number"
-              id="metros-quadrados"
-              name="metros-quadrados"
-              min="0"
-              required
-            />
+        <nav>
+          <ul class="menu">
+            <li onclick="redirect('index.html')" class="menuItem">Home</li>
+            <li onclick="redirect('produtos.html')" class="menuItem">
+              Produtos
+            </li>
+            <li onclick="redirect('trabalhe-conosco.html')" class="menuItem">
+              Trabalhe Conosco
+            </li>
+            <li onclick="redirect('orcamento.html')" class="menuItem actived">
+              Orçamento
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <h2>Solicite um Orçamento</h2>
 
-            <br />
-            <!-- Dentro do formulário -->
-            <label for="cor-desejada">Cor Desejada:</label>
-            <input
-              type="color"
-              id="cor-desejada"
-              name="cor-desejada"
-              required
-            />
+        <form id="form-orcamento" onsubmit="enviarFormulario(event)">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+          <br />
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+          <br />
+          <label for="tipo-servico">Tipo de Serviço:</label>
+          <select id="tipo-servico" name="tipo-servico" required>
+            <option value="">Selecione</option>
+            <option value="Pintura interna">Pintura interna</option>
+            <option value="Pintura externa">Pintura externa</option>
+            <option value="Pintura de fachada">Pintura de fachada</option>
+          </select>
+          <br />
+          <label for="metros-quadrados">Metros Quadrados:</label>
+          <input
+            type="number"
+            id="metros-quadrados"
+            name="metros-quadrados"
+            min="0"
+            required
+          />
 
-            <button type="submit">Enviar</button>
-          </form>
-        </section>
-      </body>
-    </html>
+          <br />
+          <!-- Dentro do formulário -->
+          <label for="cor-desejada">Cor Desejada:</label>
+          <input type="color" id="cor-desejada" name="cor-desejada" required />
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </div>
   </body>
 </html>

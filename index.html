@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Nome da Empresa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="script.js"></script>
     <link
@@ -17,35 +18,38 @@
     ></script>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <div><img src="fotos\LOGO-GOTAS.png" alt="Logo da Empresa" /></div>
-        <div><h1>Casa das tintas</h1></div>
-      </div>
-      <nav>
-        <ul class="menu">
-          <li onclick="redirect('index.html')" class="menuItem">Home</li>
-          <li onclick="redirect('produtos.html')" class="menuItem">Produtos</li>
-          <li onclick="redirect('trabalhe-conosco.html')" class="menuItem">
-            Trabalhe Conosco
-          </li>
-          <li onclick="redirect('orcamento.html')" class="menuItem">
-            Orçamento
-          </li>
-          <li onclick="redirect('pagina-extra.html')" class="menuItem">
-            Página Extra
-          </li>
+    <div class="container-fluid" style="padding: 0">
+      <header>
+        <div class="logo" class="logo d-flex">
+          <div><img src="fotos\LOGO-GOTAS.png" alt="Logo da Empresa" /></div>
+          <div><h1>Casa das tintas</h1></div>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li onclick="redirect('index.html')" class="menuItem actived">
+              Home
+            </li>
+            <li onclick="redirect('produtos.html')" class="menuItem">
+              Produtos
+            </li>
+            <li onclick="redirect('trabalhe-conosco.html')" class="menuItem">
+              Trabalhe Conosco
+            </li>
+            <li onclick="redirect('orcamento.html')" class="menuItem">
+              Orçamento
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <h2>Bem-vindo à Company</h2>
+        <p>Descrição</p>
+        <h3>Formas de Contato:</h3>
+        <ul>
+          <li>E-mail: empresa@example.com</li>
+          <li>Telefone: (XX) XXXX-XXXX</li>
         </ul>
-      </nav>
-    </header>
-    <section>
-      <h2>Bem-vindo à Company</h2>
-      <p>Descrição</p>
-      <h3>Formas de Contato:</h3>
-      <ul>
-        <li>E-mail: empresa@example.com</li>
-        <li>Telefone: (XX) XXXX-XXXX</li>
-      </ul>
-    </section>
+      </section>
+    </div>
   </body>
 </html>

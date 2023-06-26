@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Trabalhe Conosco</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="script.js"></script>
     <link
@@ -26,20 +27,22 @@
             alt="Logo da Empresa"
           />
         </div>
-        <div><h1 onclick="redirect('index.html')">Casa das tintas</h1></div>
+        <div>
+          <h1 onclick="redirect('index.html')">Casa das tintas</h1>
+        </div>
       </div>
       <nav>
         <ul class="menu">
           <li onclick="redirect('index.html')" class="menuItem">Home</li>
           <li onclick="redirect('produtos.html')" class="menuItem">Produtos</li>
-          <li onclick="redirect('trabalhe-conosco.html')" class="menuItem">
+          <li
+            onclick="redirect('trabalhe-conosco.html')"
+            class="menuItem actived"
+          >
             Trabalhe Conosco
           </li>
           <li onclick="redirect('orcamento.html')" class="menuItem">
             Orçamento
-          </li>
-          <li onclick="redirect('pagina-extra.html')" class="menuItem">
-            Página Extra
           </li>
         </ul>
       </nav>

@@ -1,0 +1,21 @@
+<html>
+  <head> </head>
+  <body>
+    <html>
+      <head> </head>
+      <body>
+        <div>
+          <p>1</p>
+          <p>2</p>
+        </div>
+      </body>
+      <script>
+        var tagDiv = document.querySelector(" div ");
+        var tagsP = document.querySelectorAll("p");
+        var pNova = document.createElement("P");
+        pNova.innerHTML = "2";
+        tagDiv.insertBefore(pNova, tagsP[1]);
+      </script>
+    </html>
+  </body>
+</html>

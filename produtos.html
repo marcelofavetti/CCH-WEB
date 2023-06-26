@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Produtos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="script.js"></script>
     <link
@@ -26,64 +27,67 @@
             alt="Logo da Empresa"
           />
         </div>
-        <div><h1 onclick="redirect('index.html')">Casa das tintas</h1></div>
+        <div>
+          <h1 onclick="redirect('index.html')">Casa das tintas</h1>
+        </div>
       </div>
       <nav>
         <ul class="menu">
           <li onclick="redirect('index.html')" class="menuItem">Home</li>
-          <li onclick="redirect('produtos.html')" class="menuItem">Produtos</li>
+          <li onclick="redirect('produtos.html')" class="menuItem actived">
+            Produtos
+          </li>
           <li onclick="redirect('trabalhe-conosco.html')" class="menuItem">
             Trabalhe Conosco
           </li>
           <li onclick="redirect('orcamento.html')" class="menuItem">
             Orçamento
           </li>
-          <li onclick="redirect('pagina-extra.html')" class="menuItem">
-            Página Extra
-          </li>
         </ul>
       </nav>
     </header>
     <section>
       <h2>Nossos Produtos</h2>
-      <div class="container-produtos">
-        <div class="produto card col-lg-2 col-md-3 col-sm-4">
-          <img src="fotos\roxo.jpg" class="card-img-top card-img" />
-          <div class="card-body">
-            <div class="card-title-container">
-              <h5 class="card-title">R$ 29,99</h5>
-              <span class="card-discount">10% Off</span>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="produto card col-lg-3 col-md-3 col-sm-2">
+            <img src="fotos\roxo.jpg" class="card-img-top card-img" />
+            <div class="card-body">
+              <div class="card-title-container">
+                <h5 class="card-title">R$ 29,99</h5>
+                <span class="card-discount">10% Off</span>
+              </div>
+              <span class="card-parcel">em 5x R$6,74</span>
+              <p class="card-text subtitle">
+                Livro Do Mil ao Milhão Sem Cortar O Cafezinho - Thiago Nigro
+              </p>
             </div>
-            <span class="card-parcel">em 5x R$6,74</span>
-            <p class="card-text subtitle">
-              Livro Do Mil ao Milhão Sem Cortar O Cafezinho - Thiago Nigro
-            </p>
           </div>
-        </div>
-        <div class="produto card col-lg-2 col-md-3 col-sm-4">
-          <img src="fotos\vermelho.jpg" class="card-img-top card-img" />
-          <div class="card-body">
-            <div class="card-title-container">
-              <h5 class="card-title">R$ 29,99</h5>
-              <span class="card-discount">10% Off</span>
+          <div class="produto card col-lg-3 col-md-3 col-sm-2">
+            <img src="fotos\vermelho.jpg" class="card-img-top card-img" />
+            <div class="card-body">
+              <div class="card-title-container">
+                <h5 class="card-title">R$ 29,99</h5>
+                <span class="card-discount">10% Off</span>
+              </div>
+              <span class="card-parcel">em 5x R$6,74</span>
+              <p class="card-text subtitle">
+                Livro Do Mil ao Milhão Sem Cortar O Cafezinho - Thiago Nigro
+              </p>
             </div>
-            <span class="card-parcel">em 5x R$6,74</span>
-            <p class="card-text subtitle">
-              Livro Do Mil ao Milhão Sem Cortar O Cafezinho - Thiago Nigro
-            </p>
           </div>
-        </div>
-        <div class="produto card col-lg-2 col-md-3 col-sm-4">
-          <img src="fotos\vernizmaritimo.jpg" class="card-img-top card-img" />
-          <div class="card-body">
-            <div class="card-title-container">
-              <h5 class="card-title">R$ 29,99</h5>
-              <span class="card-discount">10% Off</span>
+          <div class="produto card col-lg-3 col-md-3 col-sm-2">
+            <img src="fotos\vernizmaritimo.jpg" class="card-img-top card-img" />
+            <div class="card-body">
+              <div class="card-title-container">
+                <h5 class="card-title">R$ 29,99</h5>
+                <span class="card-discount">10% Off</span>
+              </div>
+              <span class="card-parcel">em 5x R$6,74</span>
+              <p class="card-text subtitle">
+                Livro Do Mil ao Milhão Sem Cortar O Cafezinho - Thiago Nigro
+              </p>
             </div>
-            <span class="card-parcel">em 5x R$6,74</span>
-            <p class="card-text subtitle">
-              Livro Do Mil ao Milhão Sem Cortar O Cafezinho - Thiago Nigro
-            </p>
           </div>
         </div>
       </div>
